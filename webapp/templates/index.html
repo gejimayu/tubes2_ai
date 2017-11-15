@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Predicio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" sizes="16x16">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-body" class="container">
+        <div class="row">
+            <div class="col">
+                <h1 id="title">Predicio</h1>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <h6 id="subtitle">Yearly income predictor</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <textarea id="text-box" class="form-control" placeholder=""></textarea>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button id="sum-btn" class="btn btn-success">
+                    Predict
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="summarized-text-box" align="left"></div>
+        </div>
+    </div>
+</body>
+
+</html>
