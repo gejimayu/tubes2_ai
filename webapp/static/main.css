@@ -1,48 +1,48 @@
 body {
-    margin: 20px auto;
+  margin: 20px auto;
 
-    color: #fff;
-    background-color: #2196f3;
+  color: #fff;
+  background-color: #7e57c2;
 
-    font-family: 'Open Sans';
-    text-align: center;
+  font-family: 'Open Sans';
+  text-align: center;
 }
 
 #title {
-    margin: 5px auto;
+  margin: 5px auto;
 
-    font-family: 'Ubuntu';
-    font-size: 3.5em;
+  font-family: 'Ubuntu';
+  font-size: 3.5em;
 }
 
 #subtitle {
-    margin: 5px;
+  margin: 5px;
 }
 
 #header {
-    margin: 30px;
+  margin: 30px;
 }
 
 #body {
-    max-width: 400px;
-}
-
-#footer {
-    margin: 10px;
-}
-
-#authors {
-    font-size: 0.8em;
-    color: #e0e0e0;
+  max-width: 400px;
 }
 
 #predict-btn {
-    margin: 20px auto;
+  margin: 20px auto;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #predicted-text-box {
-    margin: auto 10px;
-    padding: 10px;
+  margin: auto 10px;
+  padding: 10px;
+}
+
+#footer {
+  margin: 10px;
+}
+
+#authors {
+  font-size: 0.8em;
+  color: #e0e0e0;
 }
