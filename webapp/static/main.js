@@ -45,6 +45,8 @@ $(document).ready(function() {
                 success: function(data) {
                     $('#predicted-text-box').css('background-color', '#2196f3');
                     $('#predicted-text-box').html(data);
+
+                    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
                 }
             });
         }

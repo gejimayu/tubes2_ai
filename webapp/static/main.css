@@ -38,7 +38,7 @@ input {
 }
 
 #predicted-text-box {
-    margin: auto 10px;
+    margin: 10px auto;
     padding: 10px;
 }
 

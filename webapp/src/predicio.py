@@ -47,4 +47,5 @@ def predicio(user_data):
     y = knn.predict(x)
 
     pred = y[0]
-    return "<= 50K" if pred == 0 else "> 50K"
+    return "Predicted income:<br>&emsp;%s/year" % ("<= 50K"
+                                                   if pred == 0 else "> 50K")
