@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    function summarize(text, number) {
+    function predict(text, number) {
         $.ajax({
             url: '/predicio',
             type: 'POST',
@@ -8,15 +8,15 @@ $(document).ready(function() {
                 'number': number
             },
             success: function(data) {
-                $('#summarized-text-box').css('background-color', '#66bb6a');
-                $('#summarized-text-box').html(data);
+                $('#predicted-text-box').css('background-color', '#66bb6a');
+                $('#predicted-text-box').html(data);
             }
         });
     };
 
-    $('#sum-btn').click(function() {
+    $('#predict-btn').click(function() {
         var text = $('#text-box').val();
         var number = $('#number-box').val();
-        summarize(text, number);
+        predict(text, number);
     });
 });

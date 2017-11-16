@@ -25,31 +25,185 @@
 </head>
 
 <body>
-    <div id="main-body" class="container">
-        <div class="row">
-            <div class="col">
-                <h1 id="title">Predicio</h1>
-            </div>
-            <div class="w-100"></div>
-            <div class="col">
-                <h6 id="subtitle">Yearly income predictor</h6>
-            </div>
+    <div id="header" class="row">
+        <div class="col">
+            <h1 id="title">Predicio</h1>
         </div>
+        <div class="w-100"></div>
+        <div class="col">
+            <h6 id="subtitle">Yearly income predictor</h6>
+        </div>
+    </div>
+
+    <div id="body" class="container">
+
+        <form>
+            <div class="form-group">
+                <label for="age-input">Age</label>
+                <input type="number" class="form-control" id="age-input" placeholder="Enter age">
+            </div>
+            <div class="form-group">
+                <label for="workclass-input">Workclass</label>
+                <select class="form-control" id="workclass-input">
+                    <option value="Private">Private</option>
+                    <option value="Self-emp-inc">Self-employment (incorporated)</option>
+                    <option value="Self-emp-not-inc">Self-employment (unincorporated)</option>
+                    <option value="Federal-gov">Federal government</option>
+                    <option value="Local-gov">Local government</option>
+                    <option value="State-gov">State government</option>
+                    <option value="Without-pay">Without pay</option>
+                    <option value="Never-worked">Never worked</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="education-input">Education</label>
+                <select class="form-control" id="education-input">
+                    <option value="Preschool">Preschool</option>
+                    <option value="1st-4th">1st-4th</option>
+                    <option value="5th-6th">5th-6th</option>
+                    <option value="7th-8th">7th-8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                    <option value="HS-grad">High school</option>
+                    <option value="Assoc-acdm">Associate</option>
+                    <option value="Assoc-voc">Vocational</option>
+                    <option value="Some-college">Bachelor's</option>
+                    <option value="Masters">Master's</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="Prof-school">Professor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="education-num-input">Education number</label>
+                <input type="number" class="form-control" id="education-num-input" placeholder="Enter education number">
+            </div>
+            <div class="form-group">
+                <label for="marital-status-input">Marital status</label>
+                <select class="form-control" id="marital-status-input">
+                    <option value="Never-married">Never married</option>
+                    <option value="Separated">Separated</option>
+                    <option value="Widowed">Widowed</option>
+                    <option value="Married-civ-spouse">Married (civilian sp.)</option>
+                    <option value="Married-AF-spouse">Married (Armed Forces sp.)</option>
+                    <option value="Married-spouse-absent">Married (sp. absent)</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="occupation-input">Occupation</label>
+                <select class="form-control" id="occupation-input">
+                    <option value="Tech-support">Tech support</option>
+                    <option value="Craft-repair">Craft repair</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Exec-managerial">Executive/managerial</option>
+                    <option value="Prof-specialty">Professional specialty</option>
+                    <option value="Handlers-cleaners">Handlers/cleaners</option>
+                    <option value="Machine-op-inspct">Machine operational</option>
+                    <option value="Adm-clerical">Administrative/clerical</option>
+                    <option value="Farming-fishing">Farming/fishing</option>
+                    <option value="Transport-moving">Transportation</option>
+                    <option value="Priv-house-serv">Private house servant</option>
+                    <option value="Protective-serv">Protective servant</option>
+                    <option value="Armed-Forces">Armed Forces</option>
+                    <option value="Other-service">Other service</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="relationship-input">Relationship</label>
+                <select class="form-control" id="relationship-input">
+                    <option value="Husband">Husband</option>
+                    <option value="Wife">Wife</option>
+                    <option value="Own-child">Child</option>
+                    <option value="Unmarried">Unmarried</option>
+                    <option value="Not-in-family">Not in family</option>
+                    <option value="Other-relative">Other relative</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="race-input">Race</label>
+                <select class="form-control" id="race-input">
+                    <option value="White">White</option>
+                    <option value="Asian-Pac-Islander">Asian/Pacific Islander</option>
+                    <option value="Amer-Indian-Eskimo">American Indian/Eskimo</option>
+                    <option value="Black">Black</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sex-input">Sex</label>
+                <select class="form-control" id="sex-input">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="capital-gain-input">Capital gain</label>
+                <input type="number" class="form-control" id="capital-gain-input" placeholder="Enter capital gain">
+            </div>
+            <div class="form-group">
+                <label for="capital-loss-input">Capital loss</label>
+                <input type="number" class="form-control" id="capital-loss-input" placeholder="Enter capital loss">
+            </div>
+            <div class="form-group">
+                <label for="native-country-input">Sex</label>
+                <select class="form-control" id="native-country-input">
+                    <option value="United-States">United States</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="England">England</option>
+                    <option value="Puerto-Rico">Puerto Rico</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Outlying-US(Guam-USVI-etc)">Outlying US (Guam, Virgin Islands, etc)</option>
+                    <option value="India">India</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Greece">Greece</option>
+                    <option value="South">South</option>
+                    <option value="China">China</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Philipines">Philipines</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="France">France</option>
+                    <option value="Dominican-Republic">Dominican Republic</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Columbia">Columbia</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Yugoslavia">Yugoslavia</option>
+                    <option value="Trinidad&Tobago">Trinidad & Tobago</option>
+                    <option value="El-Salvador">El-Salvador</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Hong">Hong</option>
+                    <option value="Holand-Netherlands">The Netherlands</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
         <div class="row">
-            <textarea id="text-box" class="form-control" placeholder=""></textarea>
+            <div id="predicted-text-box" align="left"></div>
         </div>
+    </div>
 
-        <div class="row">
-            <div class="col">
-                <button id="sum-btn" class="btn btn-success">
-                    Predict
-                </button>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="summarized-text-box" align="left"></div>
+    <div id="footer" class="row">
+        <div class="col-12 center-block">
+            <span id="authors">
+                Devin | Gian | Hero | Rizki
+            </span>
         </div>
     </div>
 </body>
