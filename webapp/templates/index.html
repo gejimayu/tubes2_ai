@@ -36,8 +36,7 @@
     </div>
 
     <div id="body" class="container">
-
-        <form>
+        <form onsubmit="return false;">
             <div class="form-group">
                 <label for="age-input">Age</label>
                 <input type="number" class="form-control" id="age-input" placeholder="Enter age">
@@ -76,8 +75,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="education-num-input">Education number</label>
-                <input type="number" class="form-control" id="education-num-input" placeholder="Enter education number">
+                <label for="education-number-input">Education number</label>
+                <input type="number" class="form-control" id="education-number-input" placeholder="Enter education number">
             </div>
             <div class="form-group">
                 <label for="marital-status-input">Marital status</label>
@@ -147,7 +146,11 @@
                 <input type="number" class="form-control" id="capital-loss-input" placeholder="Enter capital loss">
             </div>
             <div class="form-group">
-                <label for="native-country-input">Sex</label>
+                <label for="hours-per-week-input">Hours per week</label>
+                <input type="number" class="form-control" id="hours-per-week-input" placeholder="Enter hours per week">
+            </div>
+            <div class="form-group">
+                <label for="native-country-input">Native country</label>
                 <select class="form-control" id="native-country-input">
                     <option value="United-States">United States</option>
                     <option value="Cambodia">Cambodia</option>
@@ -191,7 +194,7 @@
                     <option value="Holand-Netherlands">The Netherlands</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="predict-btn" class="btn btn-primary">Predict</button>
         </form>
 
         <div class="row">
