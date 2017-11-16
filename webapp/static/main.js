@@ -14,28 +14,39 @@ $(document).ready(function() {
         var hours_per_week = $('#hours-per-week-input').val();
         var native_country = $('#native-country-input').val();
 
-        $.ajax({
-            url: '/predict',
-            type: 'POST',
-            data: {
-                'age': age,
-                'workclass': workclass,
-                'education': education,
-                'education_number': education_number,
-                'marital_status': marital_status,
-                'occupation': occupation,
-                'relationship': relationship,
-                'race': race,
-                'sex': sex,
-                'capital_gain': capital_gain,
-                'capital_loss': capital_loss,
-                'hours_per_week': hours_per_week,
-                'native_country': native_country
-            },
-            success: function(data) {
-                $('#predicted-text-box').css('background-color', '#2196f3');
-                $('#predicted-text-box').html(data);
+        var empty = false;
+        $('input[type="number"]').each(function() {
+            if ($(this).val() == "") {
+                empty = true;
             }
         });
+
+        if (empty) {
+            alert("Please fill in all fields");
+        } else {
+            $.ajax({
+                url: '/predict',
+                type: 'POST',
+                data: {
+                    'age': age,
+                    'workclass': workclass,
+                    'education': education,
+                    'education_number': education_number,
+                    'marital_status': marital_status,
+                    'occupation': occupation,
+                    'relationship': relationship,
+                    'race': race,
+                    'sex': sex,
+                    'capital_gain': capital_gain,
+                    'capital_loss': capital_loss,
+                    'hours_per_week': hours_per_week,
+                    'native_country': native_country
+                },
+                success: function(data) {
+                    $('#predicted-text-box').css('background-color', '#2196f3');
+                    $('#predicted-text-box').html(data);
+                }
+            });
+        }
     });
 });
