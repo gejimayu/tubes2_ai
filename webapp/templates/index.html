@@ -45,11 +45,11 @@
                 <label for="workclass-input">Workclass</label>
                 <select class="form-control" id="workclass-input">
                     <option value="Private">Private</option>
-                    <option value="Self-emp-inc">Self-employment (incorporated)</option>
-                    <option value="Self-emp-not-inc">Self-employment (unincorporated)</option>
                     <option value="Federal-gov">Federal government</option>
                     <option value="Local-gov">Local government</option>
                     <option value="State-gov">State government</option>
+                    <option value="Self-emp-inc">Self-employment (incorporated)</option>
+                    <option value="Self-emp-not-inc">Self-employment (unincorporated)</option>
                     <option value="Without-pay">Without pay</option>
                     <option value="Never-worked">Never worked</option>
                 </select>
@@ -66,9 +66,10 @@
                     <option value="11th">11th</option>
                     <option value="12th">12th</option>
                     <option value="HS-grad">High school</option>
+                    <option value="Some-college">Some college</option>
                     <option value="Assoc-acdm">Associate</option>
                     <option value="Assoc-voc">Vocational</option>
-                    <option value="Some-college">Bachelor's</option>
+                    <option value="Bachelors">Bachelor's</option>
                     <option value="Masters">Master's</option>
                     <option value="Doctorate">Doctorate</option>
                     <option value="Prof-school">Professor</option>
@@ -82,30 +83,30 @@
                 <label for="marital-status-input">Marital status</label>
                 <select class="form-control" id="marital-status-input">
                     <option value="Never-married">Never married</option>
-                    <option value="Separated">Separated</option>
+                    <option value="Married-civ-spouse">Married (civilian spouse)</option>
+                    <option value="Married-AF-spouse">Married (Armed Forces spouse)</option>
+                    <option value="Married-spouse-absent">Married (spouse absent)</option>
                     <option value="Widowed">Widowed</option>
-                    <option value="Married-civ-spouse">Married (civilian sp.)</option>
-                    <option value="Married-AF-spouse">Married (Armed Forces sp.)</option>
-                    <option value="Married-spouse-absent">Married (sp. absent)</option>
+                    <option value="Separated">Separated</option>
                     <option value="Divorced">Divorced</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="occupation-input">Occupation</label>
                 <select class="form-control" id="occupation-input">
-                    <option value="Tech-support">Tech support</option>
+                    <option value="Adm-clerical">Administrative/clerical</option>
+                    <option value="Armed-Forces">Armed Forces</option>
                     <option value="Craft-repair">Craft repair</option>
-                    <option value="Sales">Sales</option>
                     <option value="Exec-managerial">Executive/managerial</option>
-                    <option value="Prof-specialty">Professional specialty</option>
+                    <option value="Farming-fishing">Farming/fishing</option>
                     <option value="Handlers-cleaners">Handlers/cleaners</option>
                     <option value="Machine-op-inspct">Machine operational</option>
-                    <option value="Adm-clerical">Administrative/clerical</option>
-                    <option value="Farming-fishing">Farming/fishing</option>
-                    <option value="Transport-moving">Transportation</option>
                     <option value="Priv-house-serv">Private house servant</option>
+                    <option value="Prof-specialty">Professional specialty</option>
                     <option value="Protective-serv">Protective servant</option>
-                    <option value="Armed-Forces">Armed Forces</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Tech-support">Tech support</option>
+                    <option value="Transport-moving">Transportation</option>
                     <option value="Other-service">Other service</option>
                 </select>
             </div>
@@ -115,18 +116,18 @@
                     <option value="Husband">Husband</option>
                     <option value="Wife">Wife</option>
                     <option value="Own-child">Child</option>
+                    <option value="Other-relative">Other relative</option>
                     <option value="Unmarried">Unmarried</option>
                     <option value="Not-in-family">Not in family</option>
-                    <option value="Other-relative">Other relative</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="race-input">Race</label>
                 <select class="form-control" id="race-input">
-                    <option value="White">White</option>
-                    <option value="Asian-Pac-Islander">Asian/Pacific Islander</option>
                     <option value="Amer-Indian-Eskimo">American Indian/Eskimo</option>
+                    <option value="Asian-Pac-Islander">Asian/Pacific Islander</option>
                     <option value="Black">Black</option>
+                    <option value="White">White</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
@@ -153,45 +154,45 @@
                 <label for="native-country-input">Native country</label>
                 <select class="form-control" id="native-country-input">
                     <option value="United-States">United States</option>
-                    <option value="Cambodia">Cambodia</option>
-                    <option value="England">England</option>
-                    <option value="Puerto-Rico">Puerto Rico</option>
-                    <option value="Germany">Germany</option>
                     <option value="Outlying-US(Guam-USVI-etc)">Outlying US (Guam, Virgin Islands, etc)</option>
-                    <option value="India">India</option>
-                    <option value="Japan">Japan</option>
-                    <option value="Greece">Greece</option>
-                    <option value="South">South</option>
+                    <option value="Cambodia">Cambodia</option>
                     <option value="China">China</option>
-                    <option value="Cuba">Cuba</option>
-                    <option value="Iran">Iran</option>
-                    <option value="Honduras">Honduras</option>
-                    <option value="Philipines">Philipines</option>
-                    <option value="Italy">Italy</option>
-                    <option value="Poland">Poland</option>
-                    <option value="Jamaica">Jamaica</option>
-                    <option value="Vietnam">Vietnam</option>
-                    <option value="Mexico">Mexico</option>
-                    <option value="Portugal">Portugal</option>
-                    <option value="Ireland">Ireland</option>
-                    <option value="France">France</option>
-                    <option value="Dominican-Republic">Dominican Republic</option>
-                    <option value="Laos">Laos</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="Taiwan">Taiwan</option>
-                    <option value="Haiti">Haiti</option>
                     <option value="Columbia">Columbia</option>
-                    <option value="Hungary">Hungary</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Dominican-Republic">Dominican Republic</option>
+                    <option value="France">France</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="El-Salvador">El Salvador</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
                     <option value="Guatemala">Guatemala</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong">Hong Kong</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="India">India</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Mexico">Mexico</option>
                     <option value="Nicaragua">Nicaragua</option>
-                    <option value="Scotland">Scotland</option>
-                    <option value="Thailand">Thailand</option>
-                    <option value="Yugoslavia">Yugoslavia</option>
-                    <option value="Trinidad&Tobago">Trinidad & Tobago</option>
-                    <option value="El-Salvador">El-Salvador</option>
                     <option value="Peru">Peru</option>
-                    <option value="Hong">Hong</option>
+                    <option value="Philipines">Philipines</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Puerto-Rico">Puerto Rico</option>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Trinidad&Tobago">Trinidad & Tobago</option>
                     <option value="Holand-Netherlands">The Netherlands</option>
+                    <option value="South">South Korea</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Yugoslavia">Yugoslavia</option>
                 </select>
             </div>
             <button type="submit" id="predict-btn" class="btn btn-primary">Predict</button>
